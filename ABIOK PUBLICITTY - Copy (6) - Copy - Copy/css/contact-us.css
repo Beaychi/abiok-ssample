@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+/* #Primary
+================================================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212112;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
+}
+::selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+
+.big-section {
+  padding-left: 100px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  text-align: left;
+}
+
+.text-container p {
+  text-align: left;
+}
+
+.form-section-header {
+  text-align: center;
+  letter-spacing: 14px;
+}
+
+.form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100vw;
+  color: transparent;
+}
+
+body.dark .form .my-input-group,
+input {
+  background-color: transparent;
+  background: transparent;
+}
+
+#message {
+  background: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  @media (max-width: 768px) {
+    .text-container {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+    h1 {
+      padding: auto;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+  .textarea {
+    width: 200%;
+  }
+  .my-btn {
+    border: none;
+    width: 10rem;
+    padding: 1rem;
+    color: #0095da;
+    margin-bottom: 1.5rem;
+    transition: all linear 0.5s;
+  }
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.my-input-group:hover,
+.textarea:hover {
+  border-color: #0095da;
+}
+
+.my-input-group {
+  display: flex;
+  border: grey 1px solid;
+}
+
+.my-btn {
+  border: none;
+  width: 10rem;
+  padding: 1rem;
+  color: #0095da;
+  margin-bottom: 1.5rem;
+  transition: all linear 0.5s;
+}
+
+.my-btn:hover {
+  /* -webkit-animation: color-change-2x 2s linear alternate both;
+  animation: color-change-2x 2s linear alternate both; */
+  background-color: #0095da;
+  color: white;
+}
+
+.dark .contact-us h1 {
+  color: #0095da;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contact-us h2,
+.contact-us h4 {
+  color: #0095da;
+  text-align: center;
+}
+
+.my-row {
+  display: flex;
+  position: inherit;
+}
+
+.my-row > * {
+  width: 100%;
+}
+
+.text-align p {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  /* Styles to apply when the viewport width is 1200px or less */
+  .my-row {
+      flex-direction: column; /* Change flex-direction to stack the divs vertically */
+  }
+
+  .my-row > div {
+      margin-top: 20px; /* Add margin to the second div to move it down */
+  }
+}

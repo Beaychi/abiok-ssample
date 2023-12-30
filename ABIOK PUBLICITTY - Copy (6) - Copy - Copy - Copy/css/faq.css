@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+/* #Primary
+================================================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212112;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
+}
+::selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+
+.faq-text {
+  margin-top: 100px;
+  padding: 150px;
+  text-align: center;
+  color: #0095da;
+}
+
+.faq-text h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.dark .faq-text h2 {
+  color: #fff;
+}
+
+.faq__icon {
+  font-size: 1.2rem;
+}
+
+.faq p {
+  margin-left: 60px;
+  margin-right: 100px;
+  margin-top: 0.8rem;
+  opacity: 0.8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease 0.5s;
+}
+
+.open p {
+  max-height: 100px;
+}
+
+.faq-header {
+  padding-left: 30px;
+  display: flex;
+  gap: 1rem;
+}
+
+.faq-header h2 {
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .faq-header h2 {
+    font-size: 20px;
+  }
+
+  .faq p {
+    padding: 0;
+    margin-top: 0.8rem;
+    text-align: left;
+  }
+
+  .open p {
+    max-height: 200px;
+  }
+}

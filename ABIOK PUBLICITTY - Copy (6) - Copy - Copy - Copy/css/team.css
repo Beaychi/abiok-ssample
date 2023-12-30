@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+/* #Primary
+================================================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212112;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
+}
+::selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #8167a9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.text-cont{
+  color: #0095da;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.text-cont h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.dark .text-cont h2 {
+  color: #fff;
+}
+
+.team {
+  justify-content: center;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* position: relative; */
+}
+
+
+.img-cont {
+  box-shadow: 0 0 20px 1px #f3f3f3;
+  padding: 1rem;
+  border: solid 3px #0095da;
+  border-radius: 10px;
+}
+
+.img-cont h4 {
+  text-align: center;
+}
+
+.img-cont img {
+  /* overflow: hidden; */
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 50%;
+  border: #0095da solid 2px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:768px) {
+  .text-cont h2 {
+  font-size: 35px;
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text-cont h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+}
