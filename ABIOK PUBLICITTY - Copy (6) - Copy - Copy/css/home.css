@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+/* #Primary
+================================================== */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212112;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
+}
+
+
+
+
+
+
+/* KEYFRAME ANIMATION*/
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 0;
+  }
+}
+
+/*----- media query for small screen devices ----*/
+
+@media (max-width: 768px) {
+  .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2000px;
+    margin-top: 300px;
+    margin-bottom: 400px;
+}
+
+
+  .btn-box,
+  .home-sci {
+    position: relative;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-box::before,
+  .home-sci::before {
+    display: none; /* Hide the before pseudo-element when centered */
+  }
+}
