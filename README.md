@@ -24,7 +24,7 @@ Explore the demo version of our website by visiting Demo Link. Get a sense of ou
 Installation
 To run this website locally, follow these steps:
 
-Clone this repository: git clone https://github.com/[username]/[repository].git
+Clone this repository: git clone (https://github.com/Beaychi/abiok-ssample.git)
 Navigate to the project directory: cd [repository]
 Open index.html in your preferred web browser.
 Usage
